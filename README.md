@@ -1,12 +1,40 @@
-# React + Vite
+🚀 Tecnologias Utilizadas
+Frontend (Atual)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+    React (Biblioteca principal)
 
-Currently, two official plugins are available:
+    React Router (Navegação entre páginas)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+    Context API ou Redux (Gerenciamento de estado)
 
-## Expanding the ESLint configuration
+    Axios/Fetch (Requisições HTTP)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    CSS Modules/Tailwind/Styled Components (Estilização)
+
+Backend (Atual ou Planejado)
+
+    Node.js + Express (API REST)
+
+    MongoDB ou PostgreSQL (Banco de dados)
+
+    JWT (JSON Web Tokens) (Autenticação)
+
+Futuras Implementações
+
+✔ Leaflet.js → Mapeamento geográfico de produção e logística
+✔ Blockchain (Ethereum/Smart Contracts) → Garantia de imutabilidade dos registros
+✔ GraphQL (opcional) → Substituir/Complementar API REST
+✔ Dashboards com D3.js ou Chart.js → Análise de dados em tempo real.
+
+📥 Como Executar o Projeto
+Pré-requisitos
+
+    Node.js (v18+)
+
+    Yarn ou NPM
+
+    MongoDB/PostgreSQL (se backend já estiver configurado)
+
+Passos para Iniciar
+
+1:Clone o repositório:git clone https://github.com/1drey2drey3drey/Software-rastreamento-da-cadeia-de-producao.git
