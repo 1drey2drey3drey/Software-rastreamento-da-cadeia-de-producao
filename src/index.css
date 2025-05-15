@@ -2,56 +2,134 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --primary-color: #6c5b7b;
+  --secondary-color: #fff;
+  --border-color: #ccc;
+  --input-padding: 0.75rem;
+  --border-radius: 0.5rem;
+  --transition: 0.3s ease;
 }
 
+hr {
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
+}
+
+.Setinha {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 40px;
+  width: 2%;
+  height: 2%;
+  float: right;
+  text-align: end;
+  align-content: end;
+}
+
+
+h2 {
+  text-align: left;
+  padding-top: 1%;
+  padding-left: 10%;
+}
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #000000;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #000000;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
+main {
+  
   min-width: 320px;
   min-height: 100vh;
 }
 
+.nome{
+  margin-left: 10%;
+  text-align: left;
+
+}
+
 h1 {
-  font-size: 3.2em;
+  text-align: center;
+  font-size: 3.1em;
   line-height: 1.1;
+  min-width: 350px;
+}
+
+.butao{
+    display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+  text-align: center;
+  display: block;
+  width: 80%;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  font-weight: 600;
+  
+  border: none;
+  border-radius: var(--border-radius);
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: background-color var(--transition);
+  margin-top: 1rem;
 }
 button:hover {
-  border-color: #646cff;
+  background-color: #2a2330;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.EspacoTexto {
+  margin-left: 5%;
+  display: flex;
+}
+
+input {
+  margin-left: 5%;
+  width: 70%;
+  height: 20%;
+  align-self: center;
+  
+}
+
+input[type=text] {
+  display: flex;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 10%;
+  box-sizing: border-box;
+}
+input[type=email] {
+  display: flex;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 10%;
+  box-sizing: border-box;
+}
+input[type=password] {
+  display: flex;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 10%;
+  box-sizing: border-box;
+}
+
+.AsteristicoVermelho {
+  color: red;
 }
 
 @media (prefers-color-scheme: light) {
@@ -61,8 +139,5 @@ button:focus-visible {
   }
   a:hover {
     color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }

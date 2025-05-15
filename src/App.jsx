@@ -1,11 +1,14 @@
-import CadastroProdutor from "./CadastroProdutor";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./router";
 
 function App() {
   return (
-    <div className="App">
-      <CadastroProdutor />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Router />
+      </div>
+    </BrowserRouter>
   );
 }
 
