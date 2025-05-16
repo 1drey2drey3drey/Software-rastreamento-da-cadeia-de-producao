@@ -4,7 +4,7 @@ import "./BarraLateral.css";
 const BarraLateral = ({
   titulo = "Menu",
   itensMenu = [
-    { texto: "Início", url: "#", icone: "🏠" },
+    { texto: "Rastrear Basqueta", url: "/rastrearbasqueta1", icone: "🏠" },
     { texto: "Sobre", url: "#", icone: "ℹ️" },
     { texto: "Serviços", url: "#", icone: "🛠️" },
     { texto: "Contato", url: "#", icone: "✉️" },
@@ -18,7 +18,7 @@ const BarraLateral = ({
   botaoAbrir = "☰",
   botaoFechar = "×",
   children,
-  corHoverFechar = "#aff86b",
+  corHoverFechar = "#7bff00",
 }) => {
   const [aberta, setAberta] = useState(false);
 
@@ -78,9 +78,9 @@ const BarraLateral = ({
           {itensMenu.map((item, index) => (
             <li key={index}>
               <a
-                href={item.url}
                 style={{ color: corTextoP }}
                 className="barra-lateral-link"
+                onClick={() => (window.location.href = item.url)}
               >
                 {item.icone && (
                   <span className="barra-lateral-icone">{item.icone}</span>

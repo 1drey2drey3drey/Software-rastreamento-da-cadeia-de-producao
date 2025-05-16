@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Tela2 } from "./pages/Tela2";
+import { RastrearBasqueta1 } from "./pages/RastrearBasqueta1";
 import CadastroProdutor from "./CadastroProdutor";
 import { Mapa1 } from "./pages/Mapa1";
 
@@ -8,7 +8,7 @@ export function Router() {
     <Routes>
       <Route path="/" element={<CadastroProdutor />} />
       <Route path="/mapa1" element={<Mapa1 />} />
-      <Route path="/tela2" element={<Tela2 />} />
+      <Route path="/rastrearbasqueta1" element={<RastrearBasqueta1 />} />
     </Routes>
   );
 }

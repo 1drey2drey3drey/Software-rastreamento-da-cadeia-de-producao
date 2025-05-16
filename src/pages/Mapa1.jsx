@@ -11,12 +11,6 @@ export function Mapa1() {
       <BarraLateral>
         <p>Conteúdo da barra lateral</p>
       </BarraLateral>
-
-      <div className="butao">
-        <button onClick={() => (window.location.href = "/tela2")}>
-          Clique aqui
-        </button>
-      </div>
     </div>
   );
 }

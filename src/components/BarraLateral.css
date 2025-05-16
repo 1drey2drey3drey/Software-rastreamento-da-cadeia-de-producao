@@ -51,7 +51,7 @@
 
 .barra-lateral-fechar:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  color: var(--cor-hover, #aff86b);
+  color: var(--cor-hover, #7bff00);
 }
 
 .barra-lateral.esquerda {
