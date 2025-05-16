@@ -2,7 +2,6 @@ import React from "react";
 import "./Basqueta.css";
 
 export function RastrearBasqueta1() {
-  // Dados mockados (substitua por seus dados reais)
   const lotes = [
     { codigo: "B-AH612MJ", data: "XX/XX/XXXX" },
     { codigo: "B-NG532OQ", data: "XX/XX/XXXX" },
