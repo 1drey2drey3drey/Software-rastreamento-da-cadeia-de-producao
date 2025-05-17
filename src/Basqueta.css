@@ -9,12 +9,17 @@
   color: white;
   font-family: Arial, sans-serif;
   padding: 20px;
-  width: 400px;
+  width: 700px;
   border-radius: 10px;
   margin: 0 auto; /* Centraliza o container */
 }
 
 .consultar-lote-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.consultar-lote-title2 {
   text-align: center;
   margin-top: 20px;
 }
@@ -66,9 +71,28 @@
   flex: 1;
 }
 
+.back-button {
+  all: unset;
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  transition: var(--transition);
+  color: var(--primary-color);
+  background: none !important;
+  border: none !important;
+}
+
 .arrow {
-  flex: 0 0 20px !important;
   text-align: center;
+  font-size: 2.2rem;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .consultar-lote-button {
@@ -93,4 +117,38 @@
   right: 25px;
   width: 12%;
   height: 6%;
+}
+
+.bluetooth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.bluetooth-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.bluetooth-button:hover {
+  background-color: #6b647d;
+  transform: scale(1.05);
+  .bluetooth-icon {
+    color: white;
+  }
+}
+
+.bluetooth-icon {
+  color: #6b647d;
+  font-size: 80px;
 }

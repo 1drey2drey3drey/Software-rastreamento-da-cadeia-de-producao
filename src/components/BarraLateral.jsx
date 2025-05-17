@@ -3,12 +3,7 @@ import "./BarraLateral.css";
 
 const BarraLateral = ({
   titulo = "Menu",
-  itensMenu = [
-    { texto: "Rastrear Basqueta", url: "/rastrearbasqueta1", icone: "🏠" },
-    { texto: "Sobre", url: "#", icone: "ℹ️" },
-    { texto: "Serviços", url: "#", icone: "🛠️" },
-    { texto: "Contato", url: "#", icone: "✉️" },
-  ],
+  itensMenu = [{ texto: "Voltar", url: "/", icone: "🏠" }],
   posicao = "esquerda",
   largura = "280px",
   corFundo = "#FFF",
@@ -18,7 +13,7 @@ const BarraLateral = ({
   botaoAbrir = "☰",
   botaoFechar = "×",
   children,
-  corHoverFechar = "#7bff00",
+  corHoverFechar = "#fff",
 }) => {
   const [aberta, setAberta] = useState(false);
 

@@ -91,7 +91,7 @@ const CadastroProdutor = () => {
             <button
               type="submit"
               className="w-full bg-[#6B647D] text-white font-extrabold text-xl py-3 rounded-lg"
-              onClick={() => (window.location.href = "/mapa1")}
+              onClick={() => (window.location.href = "/mapaprodutor")}
             >
               Confirmar
             </button>

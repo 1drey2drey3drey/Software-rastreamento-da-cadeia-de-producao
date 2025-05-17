@@ -1,8 +1,8 @@
 import React from "react";
-import "./Basqueta.css";
+import "../Basqueta.css";
+import { FaArrowRight } from "react-icons/fa";
 
-export function RastrearBasqueta1() {
-  // Dados mockados (substitua por seus dados reais)
+export function RastrearBasquetaP() {
   const lotes = [
     { codigo: "B-AH612MJ", data: "XX/XX/XXXX" },
     { codigo: "B-NG532OQ", data: "XX/XX/XXXX" },
@@ -18,7 +18,7 @@ export function RastrearBasqueta1() {
     <div className="full-screen-background">
       <div className="consultar-lote-container">
         <h1 className="consultar-lote-title">Consultar lote</h1>
-        <h3 className="consultar-lote-subtitle">Lote XX</h3>
+        <h3 className="consultar-lote-subtitle">Lote XX(Produtor)</h3>
         <hr className="consultar-lote-divider" />
 
         <ul className="consultar-lote-list">
@@ -42,10 +42,11 @@ export function RastrearBasqueta1() {
         </div>
         <div className="consultar-lote-button-container">
           <button
-            className="consultar-lote-button back-button"
-            onClick={() => (window.location.href = "/mapa1")}
+            onClick={() => (window.location.href = "/mapaprodutor")}
+            className="back-button"
+            aria-label="Voltar para o mapa"
           >
-            Voltar
+            <FaArrowRight className="arrow" />
           </button>
         </div>
       </div>
@@ -53,4 +54,4 @@ export function RastrearBasqueta1() {
   );
 }
 
-export default RastrearBasqueta1;
+export default RastrearBasquetaP;

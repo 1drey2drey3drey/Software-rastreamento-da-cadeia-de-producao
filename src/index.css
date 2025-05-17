@@ -16,8 +16,8 @@ hr {
 }
 
 .Setinha {
+  position: absolute;
   margin-top: 20px;
-  margin-left: 20px;
   margin-right: 40px;
   width: 2%;
   height: 2%;
@@ -25,7 +25,6 @@ hr {
   text-align: end;
   align-content: end;
 }
-
 
 h2 {
   text-align: left;
@@ -42,15 +41,13 @@ a:hover {
 }
 
 main {
-  
   min-width: 320px;
   min-height: 100vh;
 }
 
-.nome{
+.nome {
   margin-left: 10%;
   text-align: left;
-
 }
 
 h1 {
@@ -60,10 +57,10 @@ h1 {
   min-width: 350px;
 }
 
-.butao{
-    display: flex; 
-  justify-content: center; 
-  align-items: center; 
+.butao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
@@ -75,7 +72,6 @@ button {
   color: var(--secondary-color);
   font-size: 1.25rem;
   font-weight: 600;
-  
   border: none;
   border-radius: var(--border-radius);
   cursor: pointer;
@@ -100,10 +96,14 @@ input {
   width: 70%;
   height: 20%;
   align-self: center;
-  
 }
 
-input[type=text] {
+.Escolha {
+  font-weight: 100;
+  font-size: 2.5rem;
+}
+
+input[type="text"] {
   display: flex;
   width: 50%;
   padding: 12px 20px;
@@ -111,7 +111,7 @@ input[type=text] {
   margin-left: 10%;
   box-sizing: border-box;
 }
-input[type=email] {
+input[type="email"] {
   display: flex;
   width: 50%;
   padding: 12px 20px;
@@ -119,7 +119,7 @@ input[type=email] {
   margin-left: 10%;
   box-sizing: border-box;
 }
-input[type=password] {
+input[type="password"] {
   display: flex;
   width: 50%;
   padding: 12px 20px;
@@ -140,4 +140,41 @@ input[type=password] {
   a:hover {
     color: #747bff;
   }
+}
+.cardtitulo {
+  color: black;
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.profile-options {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.profile-card {
+  border: 1px solid #999;
+  border-radius: 12px;
+  padding: 20px;
+  padding-top: 0px;
+  width: 220px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ccc;
+}
+
+.profile-card.selected {
+  border: 2px solid #5f5670;
+  box-shadow: 0 0 15px #aaa;
 }

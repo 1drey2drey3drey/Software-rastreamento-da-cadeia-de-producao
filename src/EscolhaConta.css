@@ -1,0 +1,134 @@
+:root {
+  --primary-text-color: #000000;
+}
+.container {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  min-height: 100vh;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+
+.back-button {
+  all: unset;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  transition: var(--transition);
+  color: var(--primary-color);
+  background: none !important;
+  border: none !important;
+}
+
+.back-button:hover {
+  transform: scale(1.1);
+  background: transparent !important;
+}
+
+.arrow-icon {
+  font-size: 1.8rem;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 1.875rem;
+  color: var(--primary-text-color);
+}
+
+.divider {
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.main-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-weight: 100;
+  font-size: 2.5rem;
+  text-align: center;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.profile-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.profile-card {
+  border: 1px solid #999;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 220px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px var(--border-color);
+}
+
+.card-title {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+}
+
+.card-description {
+  text-align: center;
+  color: #333;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .profile-options {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .title {
+    font-size: 1.875rem;
+    color: var(--primary-text-color);
+  }
+}
