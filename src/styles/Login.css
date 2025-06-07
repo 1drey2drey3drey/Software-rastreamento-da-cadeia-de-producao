@@ -38,9 +38,7 @@
 
 .arrow-icon {
   font-size: 1.8rem;
-  color: black;
-  margin: 0;
-  padding: 0;
+  color: var(--primary-text-color);
 }
 
 .title {
@@ -83,8 +81,8 @@
   font-weight: 500;
 }
 
-.required-asterisk {
-  color: red;
+.input-wrapper {
+  position: relative;
 }
 
 .form-input {
@@ -135,4 +133,16 @@
   .main-content {
     padding: 1rem;
   }
+}
+
+.cadastro-link {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.link-destaque {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline;
 }

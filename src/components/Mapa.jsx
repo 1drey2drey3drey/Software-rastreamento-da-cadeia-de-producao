@@ -1,13 +1,15 @@
-import React from "react";
+import CustomPopup from "./CustomPopup"
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
+import React, { useState } from 'react';
+
 
 // Fix CRÍTICO para os ícones
 import icon from "leaflet/dist/images/marker-icon.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 
-delete L.Icon.Default.prototype._getIconUrl;
+
 L.Icon.Default.mergeOptions({
   iconUrl: icon,
   shadowUrl: iconShadow,
@@ -16,8 +18,11 @@ L.Icon.Default.mergeOptions({
   popupAnchor: [1, -34],
 });
 
+
 export default function Mapa() {
+  const [showPopup, setShowPopup] = useState(false);
   const position = [-1.27804, -48.5393]; // Coordenadas da Ilha de Cotijuba
+  
 
   return (
     <div
@@ -37,10 +42,16 @@ export default function Mapa() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         />
-        <Marker position={position}>
-          <Popup>Zona Extrativista de Açaí</Popup>
-        </Marker>
+        <Marker
+          position={position}
+          eventHandlers={{
+            click: () => {
+              setShowPopup(true);
+            },
+          }}
+        />
       </MapContainer>
+      {showPopup && <CustomPopup onClose={() => setShowPopup(false)} />}
     </div>
   );
 }

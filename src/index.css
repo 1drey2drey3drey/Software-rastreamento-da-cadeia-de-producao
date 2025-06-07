@@ -50,13 +50,6 @@ main {
   text-align: left;
 }
 
-h1 {
-  text-align: center;
-  font-size: 3.1em;
-  line-height: 1.1;
-  min-width: 350px;
-}
-
 .butao {
   display: flex;
   justify-content: center;
@@ -86,6 +79,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+h1 {
+  justify-content: center;
+  text-align: center;
+}
 .EspacoTexto {
   margin-left: 5%;
   display: flex;
@@ -96,11 +93,6 @@ input {
   width: 70%;
   height: 20%;
   align-self: center;
-}
-
-.Escolha {
-  font-weight: 100;
-  font-size: 2.5rem;
 }
 
 input[type="text"] {

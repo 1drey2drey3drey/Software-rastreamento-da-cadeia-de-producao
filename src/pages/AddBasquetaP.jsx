@@ -18,7 +18,7 @@ const handleBluetoothClick = () => {
     }, 2000); // Simula 2 segundos de espera
   };
 
-export function AddBasquetaE() {
+export function AddBasquetaP() {
   return (
     <div className="full-screen-background">
       <div className="consultar-lote-container">
@@ -46,4 +46,4 @@ export function AddBasquetaE() {
   );
 }
 
-export default AddBasquetaE;
+export default AddBasquetaP;
