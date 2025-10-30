@@ -1,40 +1,61 @@
-🚀 Tecnologias Utilizadas
-Frontend (Atual)
+# Projeto de Rastreamento da Cadeia de Produção de Açaí (Hackathon)
 
-    React (Biblioteca principal)
+## Sobre o Projeto
 
-    React Router (Navegação entre páginas)
+Este projeto foi desenvolvido durante um hackathon e tem como objetivo rastrear a cadeia de produção do açaí, desde o produtor até o extrator. A ideia é garantir a qualidade e a transparência do processo, permitindo que o consumidor final tenha acesso a informações sobre a origem e o trajeto do produto.
 
-    Context API ou Redux (Gerenciamento de estado)
+O mapeamento geográfico da produção e logística foi implementado utilizando **Leaflet.js**.
 
-    Axios/Fetch (Requisições HTTP)
+## Descontinuação e Futuro do Projeto
 
-    CSS Modules/Tailwind/Styled Components (Estilização)
+O projeto foi criado especificamente para o hackathon e não teve continuidade após o evento. Ele serve como um protótipo e uma prova de conceito da ideia original.
 
-Backend (Atual ou Planejado)
+**Atenção:** Esta é provavelmente a versão final do projeto, considerando que o **Firebase Dynamic Links foi descontinuado**. A partir de 25 de agosto de 2025, este serviço não estará mais disponível, o que impacta a funcionalidade de compartilhamento e rastreamento de links dinâmicos que era planejada para o projeto.
 
-    Node.js + Express (API REST)
+## Tecnologias Utilizadas
 
-    MongoDB ou PostgreSQL (Banco de dados)
+*   **Frontend:**
+    *   React
+    *   React Router
+    *   Context API
+    *   Axios
+    *   Tailwind CSS
+    *   Leaflet.js
+*   **Backend:**
+    *   Firebase (utilizando Firebase Authentication e Firestore Database)
+*   **Outras ferramentas:**
+    *   Vite.js
 
-    JWT (JSON Web Tokens) (Autenticação)
+## Pré-requisitos
 
-Futuras Implementações
+*   Node.js (v18+)
+*   NPM ou Yarn
 
-✔ Leaflet.js → Mapeamento geográfico de produção e logística
-✔ Blockchain (Ethereum/Smart Contracts) → Garantia de imutabilidade dos registros
-✔ GraphQL (opcional) → Substituir/Complementar API REST
-✔ Dashboards com D3.js ou Chart.js → Análise de dados em tempo real.
+## Instalação e Execução
 
-📥 Como Executar o Projeto
-Pré-requisitos
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/1drey2drey3drey/Software-rastreamento-da-cadeia-de-producao.git
+    ```
+2.  **Acesse a pasta do projeto:**
+    ```bash
+    cd Software-rastreamento-da-cadeia-de-producao
+    ```
+3.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+    ou
+    ```bash
+    yarn install
+    ```
+4.  **Execute o projeto:**
+    ```bash
+    npm run dev
+    ```
+    ou
+    ```bash
+    yarn dev
+    ```
 
-    Node.js (v18+)
-
-    Yarn ou NPM
-
-    MongoDB/PostgreSQL (se backend já estiver configurado)
-
-Passos para Iniciar
-
-1:Clone o repositório:git clone https://github.com/1drey2drey3drey/Software-rastreamento-da-cadeia-de-producao.git
+Após executar o comando `dev`, o projeto estará disponível em `http://localhost:5173` (ou outra porta, se a 5173 estiver em uso).
