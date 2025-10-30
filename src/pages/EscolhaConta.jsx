@@ -1,6 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
-import "../EscolhaConta.css";
+import "../styles/EscolhaConta.css";
 import iconExtrator from "../assets/iconExtrator.png";
 import iconProdutor from "../assets/iconProdutor.png";
 
@@ -13,15 +13,19 @@ const EscolhaConta = () => {
           className="back-button"
           aria-label="Voltar para o mapa"
         >
-          <FaArrowRight className="arrow-icon" />
+          <FaArrowRight
+            className="arrow-icon"
+            style={{ position: "relative", top: "14px" }}
+          />
         </button>
         <h1 className="title">Cadastrar sua conta</h1>
       </header>
-
-      <hr />
-
-      <main className="main-content">
-        <h1 className="Escolha">Escolha seu melhor perfil</h1>
+      <hr style={{ position: "relative", top: "-10px" }} />
+      <main
+        className="main-content"
+        style={{ position: "relative", top: "-40px" }}
+      >
+        <h1 className="heading">Escolha seu melhor perfil</h1>
 
         <div className="profile-options">
           <div

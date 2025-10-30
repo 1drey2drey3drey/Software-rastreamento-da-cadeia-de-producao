@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.21",
+    "firebase": "^12.5.0",
     "leaflet": "^1.9.4",
     "meu-v1-react": "file:",
     "postcss": "^8.5.3",
@@ -25,11 +26,11 @@
     "@eslint/js": "^9.25.0",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
-    "@vitejs/plugin-react": "^4.4.1",
+    "@vitejs/plugin-react": "^5.1.0",
     "eslint": "^9.25.0",
-    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
-    "vite": "^6.3.5"
+    "vite": "^7.1.12"
   }
 }
