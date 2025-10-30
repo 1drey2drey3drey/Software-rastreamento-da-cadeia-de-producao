@@ -11,28 +11,25 @@
 }
 
 hr {
-  width: 100%;
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
 }
 
 .Setinha {
+  position: absolute;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-right: 40px;
   width: 2%;
   height: 2%;
   float: right;
-}
-
-header {
-  vertical-align: text-top;
-  display: flex;
-  place-items: top;
+  text-align: end;
+  align-content: end;
 }
 
 h2 {
-  margin-left: 5%;
-  vertical-align: text-top;
-  display: flex;
-  place-items: top;
+  text-align: left;
+  padding-top: 1%;
+  padding-left: 10%;
 }
 a {
   font-weight: 500;
@@ -43,27 +40,31 @@ a:hover {
   color: #000000;
 }
 
-body {
-  margin: 0;
+main {
   min-width: 320px;
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.1em;
-  line-height: 1.1;
-  min-width: 350px;
+.nome {
+  margin-left: 10%;
+  text-align: left;
+}
+
+.butao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {
+  text-align: center;
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 1rem;
   background-color: var(--primary-color);
   color: var(--secondary-color);
   font-size: 1.25rem;
   font-weight: 600;
-  text-align: center;
   border: none;
   border-radius: var(--border-radius);
   cursor: pointer;
@@ -78,6 +79,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+h1 {
+  justify-content: center;
+  text-align: center;
+}
 .EspacoTexto {
   margin-left: 5%;
   display: flex;
@@ -89,6 +94,32 @@ input {
   height: 20%;
   align-self: center;
 }
+
+input[type="text"] {
+  display: flex;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 10%;
+  box-sizing: border-box;
+}
+input[type="email"] {
+  display: flex;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 10%;
+  box-sizing: border-box;
+}
+input[type="password"] {
+  display: flex;
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 10%;
+  box-sizing: border-box;
+}
+
 .AsteristicoVermelho {
   color: red;
 }
@@ -101,4 +132,41 @@ input {
   a:hover {
     color: #747bff;
   }
+}
+.cardtitulo {
+  color: black;
+  font-size: 2rem;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.profile-options {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  margin-bottom: 10px;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+}
+
+.profile-card {
+  border: 1px solid #999;
+  border-radius: 12px;
+  padding: 20px;
+  padding-top: 0px;
+  width: 220px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ccc;
+}
+
+.profile-card.selected {
+  border: 2px solid #5f5670;
+  box-shadow: 0 0 15px #aaa;
 }

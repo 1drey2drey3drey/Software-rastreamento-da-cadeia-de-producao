@@ -1,0 +1,148 @@
+:root {
+  --primary-text-color: #000000;
+}
+
+.container {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2.5rem;
+}
+
+.back-button {
+  all: unset;
+  position: absolute;
+  right: 5rem;
+  top: 2rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  transition: var(--transition);
+  color: var(--primary-color);
+  background: none !important;
+  border: none !important;
+}
+
+.back-button:hover {
+  transform: scale(1.1);
+  background: transparent !important;
+}
+
+.arrow-icon {
+  font-size: 1.8rem;
+  color: var(--primary-text-color);
+}
+
+.title {
+  font-weight: 800;
+  font-size: 1.875rem;
+  text-align: center;
+}
+
+.divider {
+  border-width: 3px;
+  border-radius: 5px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.main-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-width: 2px;
+}
+
+.button-container {
+  margin-top: 2rem;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1rem;
+  font-weight: 800;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+}
+
+.cadastro-link {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.link-destaque {
+  color: blue;
+  font-weight: bold;
+  text-decoration: underline;
+}

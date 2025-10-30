@@ -1,0 +1,137 @@
+.barra-lateral-toggle {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  top: 5px;
+  font-size: 24px;
+  background: #6c5b7b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.barra-lateral-toggle.esquerda {
+  left: 20px;
+}
+
+.barra-lateral {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  background: #fff;
+  transition: all 0.3s ease;
+  z-index: 1001;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+.barra-lateral-fechar {
+  color: inherit;
+  cursor: pointer;
+  padding: 0px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  margin-left: 10px;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+}
+
+.barra-lateral-fechar:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: var(--cor-hover, #7bff00);
+}
+
+.barra-lateral.esquerda {
+  left: -300px;
+}
+
+.barra-lateral.direita {
+  right: -300px;
+}
+
+.barra-lateral.aberta.esquerda {
+  left: 0;
+}
+
+.barra-lateral.aberta.direita {
+  right: 0;
+}
+
+.barra-lateral-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #6c5b7b;
+}
+
+.barra-lateral-fechar {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 20px;
+}
+
+.barra-lateral-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.barra-lateral-menu li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.barra-lateral-menu li a:hover {
+  background: rgba(108, 91, 123, 0.5);
+}
+
+.barra-lateral-conteudo {
+  padding: 20px;
+}
+
+.barra-lateral-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(108, 91, 123, 0.5);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.barra-lateral-overlay.visivel {
+  opacity: 1;
+  visibility: visible;
+}
+
+h2 {
+  margin: 0;
+  font-size: 32px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  left: 28%;
+  padding: 0px;
+}

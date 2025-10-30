@@ -1,0 +1,154 @@
+.full-screen-background {
+  background-color: #404040;
+  min-height: 92.4vh;
+  padding: 20px; /* Espaçamento opcional */
+}
+
+.consultar-lote-container {
+  background-color: #404040; /* Mantém a cor original */
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  width: 700px;
+  border-radius: 10px;
+  margin: 0 auto; /* Centraliza o container */
+}
+
+.consultar-lote-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.consultar-lote-title2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.consultar-lote-subtitle {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+.consultar-lote-divider {
+  border: 1px solid white;
+}
+
+.consultar-lote-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.consultar-lote-item {
+  margin-bottom: 8px;
+}
+
+.lote-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.lote-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.consultar-lote-button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.lote-button span {
+  flex: 1;
+}
+
+.back-button {
+  all: unset;
+  position: absolute;
+  right: 1.5rem;
+  top: 2rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  transition: var(--transition);
+  color: var(--primary-color);
+  background: none !important;
+  border: none !important;
+}
+
+.arrow {
+  text-align: center;
+  font-size: 2.2rem;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.consultar-lote-button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: #4caf50;
+  height: 7%;
+  width: 100%;
+  position: relative;
+}
+
+.back-button {
+  background-color: #f44336;
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  width: 12%;
+  height: 6%;
+}
+
+.bluetooth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.bluetooth-button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.bluetooth-button:hover {
+  background-color: #6b647d;
+  transform: scale(1.05);
+  .bluetooth-icon {
+    color: white;
+  }
+}
+
+.bluetooth-icon {
+  color: #6b647d;
+  font-size: 80px;
+}
